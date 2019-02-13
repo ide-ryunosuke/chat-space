@@ -8,15 +8,19 @@ html, body {
   padding: 0;
 }
 
+* {
 .header {
   background-color: blue;
-  height: 180px;
   position: fixed;
   width: 100%;
   .header-left {
     background-color: pink;
     width: 300px;
     height: 100%;
+    }
+    }
+      display: inline-block;
+      line-height: 40px;
   }
 }
 .contents {
