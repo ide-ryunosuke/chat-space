@@ -1,6 +1,8 @@
 @import "./reset";
 @import "./font-awesome";
 @import "./user";
+@import "./colors";
+@import "./flash";
 
 html, body {
   height: 100%;
@@ -41,6 +43,7 @@ html, body {
       color: white;
       float: right;
       margin-left: 5px;
+      vertical-align: center;
     }
   }
   .right-header {
