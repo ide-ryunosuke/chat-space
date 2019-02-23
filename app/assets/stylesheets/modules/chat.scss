@@ -1,7 +1,6 @@
 .chat {
   width: calc(100% - 300px);
   margin-left: 300px;
-  background-color: #fafafa;
   .header {
     box-sizing: border-box;
     height: 100px;
@@ -9,7 +8,7 @@
     position: fixed;
     width: calc(100% - 300px);
     background-color: white;
-    .left-header {
+    &__left {
       float: left;
       &__title {
         color: #333;
@@ -21,13 +20,13 @@
         color: $light_gray;
         font-size: 12px;
         margin-top: 15px;
-        .member {
+        &__member {
           display: inline-block;
           padding-right: 5px;
         }
       }
     }
-    .right-header {
+    &__right {
       border: 1px solid $light_blue;
       color: $light_blue;
       float: right;

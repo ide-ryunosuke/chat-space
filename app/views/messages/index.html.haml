@@ -4,19 +4,19 @@
 
   .chat
     .header
-      .left-header
-        .left-header__title
+      .header__left
+        .header__left__title
           グループ名
-        %ul.left-header__members
+        %ul.header__left__members
           Member：
-          %li.member
+          %li.header__left__members__member
             メンバー名
-          %li.member
+          %li.header__left__members__member
             メンバー名
-          %li.member
+          %li.header__left__members__member
             メンバー名
-      .right-header
-        .right-header__button
+      .header__right
+        .header__right__button
           Edit
     .messages
       = render @messages
