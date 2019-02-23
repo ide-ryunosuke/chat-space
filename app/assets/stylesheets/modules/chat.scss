@@ -46,10 +46,10 @@
     background-color: #fafafa;
     box-sizing: border-box;
     padding: 46px 40px 0;
-    overflow: scroll;
+    overflow-y:scroll;
     margin-top:100px;
     margin-bottom: 90px;
-    height: 100%;
+    height: calc(100vh - 200px);
     .message {
       .upper-message {
         display: flex;

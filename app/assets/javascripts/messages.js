@@ -6,7 +6,7 @@ $(function(){
     }
     var html = `<div class="message">
                   <div class="upper-message">
-                    <div class="upper-message__user-name" ${message.user_id}>
+                    <div class="upper-message__user-name">
                       ${message.user_name}
                     </div>
                     <div class="upper-message__date">
@@ -24,7 +24,6 @@ $(function(){
   }
   $('#new_message').on('submit', function(e){
     e.preventDefault();
-    console.log(this)
     var formData = new FormData(this);
     var url = $(this).attr('action')
     $.ajax({
@@ -38,7 +37,7 @@ $(function(){
     .done(function(data){
       var html = buildHTML(data);
       $('.messages').append(html);
-      $('.messagese').animate({scrollTop: $(".messages")[0].scrollHeight},1000);
+      $('.messages').animate({scrollTop: $(".messages")[0].scrollHeight},'fast');
       $('#new_message')[0].reset();
       $('input').prop("disabled",false);
     })
@@ -46,7 +45,4 @@ $(function(){
       alert('error');
     })
   })
-  function scroll() {
-    $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast')
-  }
 })
