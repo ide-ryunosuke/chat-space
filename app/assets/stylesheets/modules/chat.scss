@@ -1,6 +1,7 @@
 .chat {
   width: calc(100% - 300px);
   margin-left: 300px;
+  background-color: #fafafa;
   .header {
     box-sizing: border-box;
     height: 100px;
@@ -42,12 +43,13 @@
   }
 
   .messages {
-    background-color: #FAFAFA;
+    background-color: #fafafa;
     box-sizing: border-box;
     padding: 46px 40px 0;
-    height: calc(100% - 100px - 90px);
     overflow: scroll;
     margin-top:100px;
+    margin-bottom: 90px;
+    height: 100%;
     .message {
       .upper-message {
         display: flex;
@@ -65,7 +67,7 @@
       .lower-message {
         margin-top: 10px;
         &__content {
-          color: $black;
+          color: #434a54;
           font-size: 14px;
           margin-bottom: 40px;
         }
