@@ -84,7 +84,6 @@ $(function(){
     })
     .done(function(new_message){
       new_message.messages.forEach(function(autoMessage){
-        console.log(autoMessage)
         buildMESSAGE(autoMessage);
       });
     });
