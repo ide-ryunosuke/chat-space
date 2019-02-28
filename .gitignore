@@ -16,3 +16,4 @@ public/uploads/*
 !public/uploads/message/image/107/winter-843578__480.jpg
 # Ignore Byebug command history file.
 .byebug_history
+config/secrets.yml
