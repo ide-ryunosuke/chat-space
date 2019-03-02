@@ -48,8 +48,8 @@
     $(this).parent().remove();
     appendMemberHTML(name,user_id)
   });
-  $("#chat-group-users").on("click",".chat-group-user",function(){
-    $(this).remove();
+  $("#chat-group-users").on("click",".js-remove-btn",function(){
+    $(this).parent().remove();
   });
 });
 
